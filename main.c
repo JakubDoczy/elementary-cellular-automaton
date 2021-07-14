@@ -129,7 +129,7 @@ static const bool RULE110[] = {
   true   // <- 111
 };
 
-static void print_as_characters(block_t block, uint8_t bits) {
+static void print_block(block_t block, uint8_t bits) {
     assert(bits > 0);
     block_t mask = 1 << (BLOCK_SIZE - 1);
     block_t end_mask = 1 << (BLOCK_SIZE - bits);
